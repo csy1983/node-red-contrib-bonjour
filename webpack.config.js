@@ -1,7 +1,7 @@
 const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
-  entry: ['babel-polyfill', './src/bonjour-browser.js'],
+  entry: ['babel-polyfill', './src/bonjour.js'],
   target: 'node',
   module: {
     loaders: [
@@ -13,14 +13,14 @@ module.exports = {
         },
       },
       {
-        test: /bonjour-browser\.html/,
+        test: /bonjour\.html/,
         loader: 'file-loader',
         query: {
           name: '[name].[ext]',
         },
       },
       {
-        test: /bonjour-browser\.json/,
+        test: /bonjour\.json/,
         loader: 'file-loader',
         query: {
           name: '[path][name].[ext]',
@@ -30,7 +30,7 @@ module.exports = {
   },
   output: {
     path: './dist',
-    filename: 'bonjour-browser.js',
+    filename: 'bonjour.js',
     libraryTarget: 'umd',
   },
   externals: [nodeExternals()],

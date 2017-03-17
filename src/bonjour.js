@@ -1,7 +1,7 @@
 import { Bonjour } from 'node-service-discovery-kit';
 
-require('file-loader?emitFile=false!./bonjour-browser.html'); // eslint-disable-line
-require.context('../locales', true, /bonjour-browser\.json/) // eslint-disable-line
+require('file-loader?emitFile=false!./bonjour.html'); // eslint-disable-line
+require.context('../locales', true, /bonjour\.json/) // eslint-disable-line
 
 module.exports = function(RED) { // eslint-disable-line
   function BonjourBrowserNode(config) {
@@ -25,5 +25,5 @@ module.exports = function(RED) { // eslint-disable-line
     });
   }
 
-  RED.nodes.registerType('bonjour-browser', BonjourBrowserNode);
+  RED.nodes.registerType('bonjour', BonjourBrowserNode);
 };

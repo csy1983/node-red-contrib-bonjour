@@ -1,8 +1,8 @@
 {
-  "name": "node-red-contrib-bonjour-browser",
+  "name": "node-red-contrib-bonjour",
   "version": "0.1.0",
   "description": "Service discovery for Node-RED, using bonjour package which is in pure Javascript made by watson.",
-  "main": "src/bonjour-browser.js",
+  "main": "src/bonjour.js",
   "dependencies": {
     "node-service-discovery-kit": "git+https://github.com/csy1983/node-service-discovery-kit.git"
   },
@@ -30,11 +30,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/csy1983/node-red-contrib-bonjour-browser.git"
+    "url": "https://github.com/csy1983/node-red-contrib-bonjour.git"
   },
   "node-red": {
     "nodes": {
-      "bonjour-browser": "dist/bonjour-browser.js"
+      "bonjour": "dist/bonjour.js"
     }
   }
 }

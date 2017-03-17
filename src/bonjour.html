@@ -1,4 +1,4 @@
-<script type="text/x-red" data-template-name="bonjour-browser">
+<script type="text/x-red" data-template-name="bonjour">
   <div class="form-row">
     <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="main.label.name"></span></label>
     <input type="text" id="node-input-name" placeholder="Bonjour browser">
@@ -7,8 +7,8 @@
 
 <script type="text/javascript">
   /* eslint-disable */
-  RED.nodes.registerType('bonjour-browser', {
-    category: 'service',
+  RED.nodes.registerType('bonjour', {
+    category: 'input',
     defaults: {
       name: { value: '' },
     },
